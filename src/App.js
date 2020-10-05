@@ -41,8 +41,7 @@ function App() {
       <Register></Register>
           </PrivateRoute>
 
-
-          <Route path="/allActivities">
+          <Route path="/allactivities">
       <AllActivities></AllActivities>
           </Route> 
 

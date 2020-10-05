@@ -67,15 +67,14 @@ import {
     // console.log(userInfo);
   
     const registrationClick =()=>{
-    //   console.log('Yes Registration  clicked')
-    //   // fetch('http://localhost:4000/newVolunteer',{
-    //   //   method: 'POST',
-    //   //   headers: {'Content-Type': 'application/json'},
-    //   //   body: JSON.stringify(userInfo)
-    //   // })
-    //   .then(res=> res.json())
-    //   .then(data => console.log(data))
-      history.push("/allActivities")
+      fetch('http://localhost:4000/newVolunteer',{
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(userInfo)
+      })
+      .then(res=> res.json())
+      .then(data => console.log(data))
+      history.push("/allactivities")
   }
   
     return (
