@@ -1,0 +1,33 @@
+.Home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgba(241, 241, 241, 0.733), rgba(255, 255, 255, 0.692)), url("https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 104vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.Home .container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10vh ;
+}
+.container input{
+    width: 30vw;
+    padding: 10px;
+    border: 1px solid grey;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+   
+    background-color:rgb(255, 255, 255);
+}
+.container input:focus{
+    outline-color: green;
+}
+.Home h1{
+    font-size: 40px;
+    text-transform: uppercase;
+}
