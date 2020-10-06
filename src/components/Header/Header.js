@@ -64,7 +64,7 @@ admin:{
 const Header = () => {
     const classes = useStyles();
 
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const [loggedInUser] = useContext(UserContext);
 
     const history = useHistory();
 

@@ -53,6 +53,7 @@ function App() {
          <Route path="/eventPanel">
       <EventPanel></EventPanel>
           </Route> 
+          
           <Route path="*">
             <NotFound></NotFound>
           </Route>

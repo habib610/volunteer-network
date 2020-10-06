@@ -54,7 +54,7 @@ const Register = () => {
     setUserInfo(newUserInfo);
   };
 
-  // console.log(userInfo);
+
   const registrationClick = () => {
     fetch("http://localhost:5000/addEvent", {
       method: "POST",

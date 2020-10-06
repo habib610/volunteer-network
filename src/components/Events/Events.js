@@ -34,12 +34,7 @@ const Events = ({event}) => {
   if (event.id % 4 === 3) {
     bgColor = colors[3];
   }
-//   const history = useHistory();
 
-//  const handleClick=()=>{
-// //    history.push(`/register/${name}`)
-//    history.push("/register")
-//  }
     return (
         <Grid item className={classes.root} sm={6} md={4} lg={3} align="center">
         <img src={event.photo} style={{ width: "100%" }} alt="" />

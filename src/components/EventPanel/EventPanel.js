@@ -60,7 +60,6 @@ const EventPanel = () => {
           </Button>
         </Grid>
         <Grid item sm={12} md={9} container spacing={3}>
-          <h1>hello haboasidfasadfasdkfsadkfasdkfasdfasdfasdfk</h1>
 
           <Grid item container sm={12} md={12}>
             <form
