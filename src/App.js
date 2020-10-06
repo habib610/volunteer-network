@@ -15,6 +15,7 @@ import AllActivities from './components/AllActivities/AllActivities';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Admin from './components/Admin/Admin';
 import NotFound from './components/NotFound/NotFound';
+import EventPanel from './components/EventPanel/EventPanel';
 
 export const UserContext = createContext() 
 function App() {
@@ -48,6 +49,9 @@ function App() {
 
          <Route path="/admin">
       <Admin></Admin>
+          </Route> 
+         <Route path="/eventPanel">
+      <EventPanel></EventPanel>
           </Route> 
           <Route path="*">
             <NotFound></NotFound>

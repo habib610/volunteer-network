@@ -28,13 +28,11 @@ const Activity = (props) => {
       })
       .then(res => res.json()) 
       .then(res => console.log("deleted successfully"))
-    
 
 
 
 
 
-    
     const container = e.currentTarget.parentNode.parentNode;
     container.style.display= 'none'
   }
