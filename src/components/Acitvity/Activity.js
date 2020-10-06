@@ -20,18 +20,23 @@ const Activity = (props) => {
     console.log(e.currentTarget.name)
     const uniqueKey = e.currentTarget.name;
     console.log(typeof uniqueKey)
-    fetch('http://localhost:4000/delete/' + uniqueKey, {
-        method: 'DELETE',
-        headers: {
-            'Content-type': 'application/json'
-           },
-      })
-      .then(res => res.json()) // or res.json()
-      .then(res => console.log("deleted successfully"))
+    // fetch('http://localhost:4200/delete/' + uniqueKey, {
+    //     method: 'DELETE',
+    //     headers: {
+    //         'Content-type': 'application/json'
+    //        },
+    //   })
+    //   .then(res => res.json()) // or res.json()
+    //   .then(res => console.log("deleted successfully"))
+    
+
+
+
+
+
     
     const container = e.currentTarget.parentNode.parentNode;
     container.style.display= 'none'
-
   }
     return (
                <Grid container item sm={12} md={6}>

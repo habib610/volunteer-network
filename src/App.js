@@ -14,6 +14,7 @@ import { createContext } from 'react';
 import AllActivities from './components/AllActivities/AllActivities';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Admin from './components/Admin/Admin';
+import NotFound from './components/NotFound/NotFound';
 
 export const UserContext = createContext() 
 function App() {
@@ -41,13 +42,16 @@ function App() {
       <Register></Register>
           </PrivateRoute>
 
-          <Route path="/allactivities">
+          <Route path="/dashboard">
       <AllActivities></AllActivities>
           </Route> 
 
          <Route path="/admin">
       <Admin></Admin>
           </Route> 
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
         </Switch>
       </Router>
     </UserContext.Provider>

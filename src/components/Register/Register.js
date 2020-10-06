@@ -65,18 +65,18 @@ import {
   }
   
     // console.log(userInfo);
-  
     const registrationClick =()=>{
-      fetch('http://localhost:4000/newVolunteer',{
+      fetch('http://localhost:5000/addEvent',{
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(userInfo)
       })
       .then(res=> res.json())
       .then(data => console.log(data))
-      history.push("/allactivities")
+      history.push("/dashboard")
   }
-  
+
+
     return (
       <div>
         <Container className={classes.root} style={{ textAlign: "left" }}>

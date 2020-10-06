@@ -14,14 +14,20 @@ const AllActivities = () => {
 
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [activity, setActivity] = useState([])
+
+
     useEffect(()=>{
-        fetch('http://localhost:4000/allactivities?email='+loggedInUser.email)
+        fetch(`http://localhost:5000/activity?username=${loggedInUser.email}`)
         .then(res=> res.json())
         .then(data=> setActivity(data))
-    },[])
+    }, [])
+
+
+
+    console.log(loggedInUser.email)
+
 
     
-    // console.log(loggedInUser.email)
     return (
         <div>
             <Header></Header>
