@@ -16,7 +16,7 @@ const Admin = () => {
 
     const [admins, setAdmins] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/adminList')
+        fetch('https://rocky-crag-53831.herokuapp.com/adminList')
             .then(res => res.json())
             .then(data => setAdmins(data))
     }, [])

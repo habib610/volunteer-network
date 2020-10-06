@@ -12,7 +12,7 @@ const AllActivities = () => {
     const [activity, setActivity] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/activity?username=${loggedInUser.email}`)
+        fetch(`https://rocky-crag-53831.herokuapp.com/activity?username=${loggedInUser.email}`)
             .then((res) => res.json())
             .then((data) => setActivity(data));
     }, []);

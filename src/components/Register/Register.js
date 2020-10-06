@@ -56,7 +56,7 @@ const Register = () => {
 
 
   const registrationClick = () => {
-    fetch("http://localhost:5000/addEvent", {
+    fetch("https://rocky-crag-53831.herokuapp.com/addEvent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userInfo),

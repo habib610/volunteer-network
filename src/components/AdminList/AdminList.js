@@ -9,7 +9,7 @@ const AdminList = (props) => {
   const handleDelete = (e, id) => {
     const uniqueKey = e.currentTarget.name;
     console.log(typeof uniqueKey);
-    fetch(`http://localhost:5000/delete/${uniqueKey}`, {
+    fetch(`https://rocky-crag-53831.herokuapp.com/delete/${uniqueKey}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",
